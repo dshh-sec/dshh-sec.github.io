@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Posts on Dshh&#39;s Blog</title>
+    <link>https://dshh-sec.github.io/posts/</link>
+    <description>Recent content in Posts on Dshh&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh</language>
+    <lastBuildDate>Tue, 20 Aug 2024 15:03:29 +0800</lastBuildDate><atom:link href="https://dshh-sec.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>流量、样本解密</title>
+      <link>https://dshh-sec.github.io/posts/%E6%A0%B7%E6%9C%AC%E8%A7%A3%E5%AF%86/</link>
+      <pubDate>Tue, 20 Aug 2024 15:03:29 +0800</pubDate>
+      
+      <guid>https://dshh-sec.github.io/posts/%E6%A0%B7%E6%9C%AC%E8%A7%A3%E5%AF%86/</guid>
+      <description>&lt;h2 id=&#34;0x1概述&#34;&gt;0x1、概述&lt;/h2&gt;
+&lt;p&gt;在研究学习Windows程序逆向的时候，遇到文件加解密。加解密比价贴合实际工作，特别是APT的二次下载样本、shellcode、C&amp;amp;C等又如键盘记录、屏幕截图等，网络传输数据流都有很大概率是加密的。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>手机取证</title>
+      <link>https://dshh-sec.github.io/posts/%E6%89%8B%E6%9C%BA%E5%8F%96%E8%AF%81/</link>
+      <pubDate>Sat, 10 Aug 2024 15:03:29 +0800</pubDate>
+      
+      <guid>https://dshh-sec.github.io/posts/%E6%89%8B%E6%9C%BA%E5%8F%96%E8%AF%81/</guid>
+      <description>&lt;p&gt;itunes backup&lt;/p&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://image-1253434595.cos.ap-chengdu.myqcloud.com/img/202409202201620.png&#34; alt=&#34;img&#34;  /&gt;
+&lt;/p&gt;
+&lt;p&gt;手机输入密码新人设备，信任文件保存在电脑中&lt;/p&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://image-1253434595.cos.ap-chengdu.myqcloud.com/img/202409202201169.png&#34; alt=&#34;img&#34;  /&gt;
+&lt;/p&gt;
+&lt;p&gt;注意：信任文件会因版本升级、系统重启等因素失效&lt;/p&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://image-1253434595.cos.ap-chengdu.myqcloud.com/img/202409202201084.png&#34; alt=&#34;img&#34;  /&gt;
+&lt;/p&gt;
+&lt;p&gt;建议使用加密备份，获取的信息更加全面&lt;/p&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://image-1253434595.cos.ap-chengdu.myqcloud.com/img/202409202201006.png&#34; alt=&#34;img&#34;  /&gt;
+&lt;/p&gt;
+&lt;p&gt;备份完成后的存储路径&lt;code&gt;%USERPROFILE%\Apple\MobileSync\Backup&lt;/code&gt;下的设备UDID文件夹中。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>测试文档</title>
+      <link>https://dshh-sec.github.io/posts/test/</link>
+      <pubDate>Mon, 20 Sep 2021 15:03:29 +0800</pubDate>
+      
+      <guid>https://dshh-sec.github.io/posts/test/</guid>
+      <description>&lt;h1 id=&#34;asdadsd测试&#34;&gt;ASDADSD测试&lt;/h1&gt;
+&lt;p&gt;&lt;em&gt;ADASD测试&lt;/em&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;ASDA测试&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;ADASD测试
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;code&gt;SDASD测试&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;ASDASDAS测试&lt;/p&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;test.assets/image-20240920154939633.png&#34; alt=&#34;image-20240920154939633&#34;  /&gt;
+&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>
