@@ -2,27 +2,53 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Posts on Dshh&#39;s Blog</title>
-    <link>https://dshh-sec.github.io/posts/</link>
+    <link>http://localhost:1313/posts/</link>
     <description>Recent content in Posts on Dshh&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh</language>
-    <lastBuildDate>Tue, 20 Aug 2024 15:03:29 +0800</lastBuildDate><atom:link href="https://dshh-sec.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 10 Sep 2024 15:03:29 +0800</lastBuildDate><atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>arm定时转储</title>
+      <link>http://localhost:1313/posts/arm%E5%86%85%E5%AD%98%E5%AE%9A%E6%97%B6%E8%BD%AC%E5%82%A8/</link>
+      <pubDate>Tue, 10 Sep 2024 15:03:29 +0800</pubDate>
+      
+      <guid>http://localhost:1313/posts/arm%E5%86%85%E5%AD%98%E5%AE%9A%E6%97%B6%E8%BD%AC%E5%82%A8/</guid>
+      <description>&lt;p&gt;需求：每小时取一次内存，并传回本地笔记本中。&lt;/p&gt;
+&lt;p&gt;树莓派版本如下，内存1GB，系统版本Ubuntu，内核版本armv7l&lt;/p&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://image-1253434595.cos.ap-chengdu.myqcloud.com/img/202409241120216.png&#34; alt=&#34;&#34;  /&gt;
+&lt;/p&gt;
+&lt;p&gt;&lt;font style=&#34;color:rgb(79, 79, 79);&#34;&gt;arm架构使用lime来转储内存，需要编译模块。浏览编写需要的资源，发现已经有内核src文件了，但缺少头文件，树莓派下的linux_headers安装于其他平台不同，需要使用&lt;/font&gt;&lt;code&gt;sudo apt install raspberrypi-kernel-headers&lt;/code&gt;命令安装&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>常见数据库取证</title>
+      <link>http://localhost:1313/posts/%E5%B8%B8%E8%A7%81%E6%95%B0%E6%8D%AE%E5%BA%93%E5%8F%96%E8%AF%81/</link>
+      <pubDate>Sun, 01 Sep 2024 15:03:29 +0800</pubDate>
+      
+      <guid>http://localhost:1313/posts/%E5%B8%B8%E8%A7%81%E6%95%B0%E6%8D%AE%E5%BA%93%E5%8F%96%E8%AF%81/</guid>
+      <description>&lt;p&gt;在web攻击中很可能会涉及数据库相关痕迹，数据库分为关系型数据库和非关系型数据库，本文以典型的关系MSSQL、MYSQL举例子，认识取证的目标、熟悉数据库取证是的实际操作与数据库还原恢复方法。&lt;/p&gt;
+&lt;h1 id=&#34;ms-sql数据库取证&#34;&gt;MS SQL数据库取证&lt;/h1&gt;
+&lt;h2 id=&#34;0x1ms-sql系统数据库&#34;&gt;0x1、MS SQL系统数据库&lt;/h2&gt;
+&lt;p&gt;Master:是整个数据库服务器的核心。记录SQLServer系统的所有系统级信息，例如:登陆账户信息、链接服务器和系统配置设置、记录其他所有数据库的存在、数据文件的位置、SQL Server的初始化信息等。如果master数据库不可用，则无法启动SQL Server.&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>流量、样本解密</title>
-      <link>https://dshh-sec.github.io/posts/%E6%A0%B7%E6%9C%AC%E8%A7%A3%E5%AF%86/</link>
+      <link>http://localhost:1313/posts/%E6%A0%B7%E6%9C%AC%E8%A7%A3%E5%AF%86/</link>
       <pubDate>Tue, 20 Aug 2024 15:03:29 +0800</pubDate>
       
-      <guid>https://dshh-sec.github.io/posts/%E6%A0%B7%E6%9C%AC%E8%A7%A3%E5%AF%86/</guid>
+      <guid>http://localhost:1313/posts/%E6%A0%B7%E6%9C%AC%E8%A7%A3%E5%AF%86/</guid>
       <description>&lt;h2 id=&#34;0x1概述&#34;&gt;0x1、概述&lt;/h2&gt;
-&lt;p&gt;在研究学习Windows程序逆向的时候，遇到文件加解密。加解密比价贴合实际工作，特别是APT的二次下载样本、shellcode、C&amp;amp;C等又如键盘记录、屏幕截图等，网络传输数据流都有很大概率是加密的。&lt;/p&gt;</description>
+&lt;p&gt;在研究学习Windows程序逆向的时候，遇到文件加解密。加解密比价贴合实际工作，特别是APT的二次下载样本、shellcode、C&amp;amp;C等又如键盘记录、屏幕截图等，网络传输数据流都有很大概率是加密的。&lt;/p&gt;
+&lt;p&gt;如下面恶意代码，从自身资源节中释放加密文件，再将释放的文件就行解密，最后将解密出来的pe文件注入到svchost进程中。&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>手机取证</title>
-      <link>https://dshh-sec.github.io/posts/%E6%89%8B%E6%9C%BA%E5%8F%96%E8%AF%81/</link>
+      <link>http://localhost:1313/posts/%E6%89%8B%E6%9C%BA%E5%8F%96%E8%AF%81/</link>
       <pubDate>Sat, 10 Aug 2024 15:03:29 +0800</pubDate>
       
-      <guid>https://dshh-sec.github.io/posts/%E6%89%8B%E6%9C%BA%E5%8F%96%E8%AF%81/</guid>
+      <guid>http://localhost:1313/posts/%E6%89%8B%E6%9C%BA%E5%8F%96%E8%AF%81/</guid>
       <description>&lt;p&gt;itunes backup&lt;/p&gt;
 &lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://image-1253434595.cos.ap-chengdu.myqcloud.com/img/202409202201620.png&#34; alt=&#34;img&#34;  /&gt;
 &lt;/p&gt;
@@ -35,15 +61,335 @@
 &lt;p&gt;建议使用加密备份，获取的信息更加全面&lt;/p&gt;
 &lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://image-1253434595.cos.ap-chengdu.myqcloud.com/img/202409202201006.png&#34; alt=&#34;img&#34;  /&gt;
 &lt;/p&gt;
-&lt;p&gt;备份完成后的存储路径&lt;code&gt;%USERPROFILE%\Apple\MobileSync\Backup&lt;/code&gt;下的设备UDID文件夹中。&lt;/p&gt;</description>
+&lt;p&gt;备份完成后的存储路径&lt;code&gt;%USERPROFILE%\Apple\MobileSync\Backup&lt;/code&gt;下的设备UDID文件夹中。&lt;/p&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://image-1253434595.cos.ap-chengdu.myqcloud.com/img/202409202201175.png&#34; alt=&#34;img&#34;  /&gt;
+&lt;/p&gt;
+&lt;p&gt;mvt（Mobile Verification Toolkit）&lt;/p&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://image-1253434595.cos.ap-chengdu.myqcloud.com/img/202409202201116.png&#34; alt=&#34;img&#34;  /&gt;
+&lt;/p&gt;
+&lt;p&gt;Oxygen Forensic Suite，支持对手机基本信息、SIM卡信息、联系人列表、组信息、快速拨号、通话记录、短消息、短信中心时间戳、日历、待办事项、文本便签、照片、视频、音频、LifeBlog 数据（所有活动，包含地理信息）、Java 程序、手机内存和闪存卡中的文件系统数据、GPRS 和 Wi-Fi 使用记录、录音文件等信息的获取与恢复。该工具也可以针对非智能手机、智能手机、平板的逻辑分析。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>USRCLASS.DAT取证</title>
+      <link>http://localhost:1313/posts/usrclass.dat/</link>
+      <pubDate>Tue, 06 Aug 2024 15:03:29 +0800</pubDate>
+      
+      <guid>http://localhost:1313/posts/usrclass.dat/</guid>
+      <description>&lt;p&gt;ShellBags是一组用来记录文件夹（包括挂载网络驱动器文件夹和挂载设备的文件夹）的名称、大小、图标、视图、位置的注册表项，或称为BagMRU。每次对文件夹的操作，ShellBags的信息都会更新，而且包含时间戳信息。是Windows系统改善用户体验的功能之一。即使删除文件夹后，ShellBags仍然会保留文件夹的信息。因此可以用来揭示用户的活动。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Kylin国产麒麟系统取证</title>
+      <link>http://localhost:1313/posts/kylin%E5%9B%BD%E4%BA%A7%E9%BA%92%E9%BA%9F%E7%B3%BB%E7%BB%9F/</link>
+      <pubDate>Tue, 23 Jul 2024 12:03:29 +0800</pubDate>
+      
+      <guid>http://localhost:1313/posts/kylin%E5%9B%BD%E4%BA%A7%E9%BA%92%E9%BA%9F%E7%B3%BB%E7%BB%9F/</guid>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;Kylin系统，为目前中国领先的自主可控操作系统之一，于2001年由国防科技大学研发，旨在打破外国操作系统在中国市场的垄断地位，并增强国家信息安全。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;麒麟系统最开始基于FreeBSD改写，Kylin 3.0版之后改用Linux来改写。&lt;/p&gt;
+&lt;p&gt;安装时可能使用全盘加密，影响取证&lt;/p&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://image-1253434595.cos.ap-chengdu.myqcloud.com/img/202409241357438.png&#34; alt=&#34;img&#34;  /&gt;
+&lt;/p&gt;
+&lt;p&gt;麒麟系统默认root用户是不开启的，使用sudo -i 可以切换到root&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>windows下检测方法</title>
+      <link>http://localhost:1313/posts/windows%E4%B8%8B%E6%A3%80%E6%B5%8B%E6%96%B9%E6%B3%95/</link>
+      <pubDate>Tue, 12 Mar 2024 15:03:29 +0800</pubDate>
+      
+      <guid>http://localhost:1313/posts/windows%E4%B8%8B%E6%A3%80%E6%B5%8B%E6%96%B9%E6%B3%95/</guid>
+      <description>&lt;h1 id=&#34;用户&#34;&gt;用户&lt;/h1&gt;
+&lt;p&gt;对于帐户，攻击者一般的利用方式有：&lt;/p&gt;
+&lt;p&gt;• 使用存在/默认的帐户&lt;/p&gt;
+&lt;p&gt;• 创建新的帐户&lt;/p&gt;
+&lt;p&gt;• 删除/修改帐户&lt;/p&gt;
+&lt;p&gt;• 账号克隆&lt;/p&gt;
+&lt;p&gt;查看系统存在的用户：&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-powershell&#34; data-lang=&#34;powershell&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;net user	&lt;span style=&#34;color:#75715e&#34;&gt;# 查看系统用户,但是无法查看&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;wmic useraccount list full
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Get-LocalUser |Select * 		&lt;span style=&#34;color:#75715e&#34;&gt;# powershell&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# 注册表查看&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;检查用户目录(可能不准确，第一次登录时才会创建) ，用户的目录显示的时间可能是用户实际创建的时间，也有情况实际时间可能比目录时间早。&lt;/p&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://image-1253434595.cos.ap-chengdu.myqcloud.com/img/202409241401541.png&#34; alt=&#34;img&#34;  /&gt;
+&lt;/p&gt;
+&lt;p&gt;对于用户帐户，多数情况下和业务需求用关，我们可能需要和管理员确认帐户的合法性。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Bitlocker解密研究</title>
+      <link>http://localhost:1313/posts/bitlocker%E8%A7%A3%E5%AF%86%E7%A0%94%E7%A9%B6/</link>
+      <pubDate>Wed, 20 Dec 2023 12:00:29 +0800</pubDate>
+      
+      <guid>http://localhost:1313/posts/bitlocker%E8%A7%A3%E5%AF%86%E7%A0%94%E7%A9%B6/</guid>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;BitLocker驱动器加密是在WindowsVista内首次提供的操作系统的一项数据保护功能。&lt;/p&gt;
+&lt;p&gt;后来的操作系统版本不断改进BitLocker保护锁提供的安全性，从而允许操作系统为更多驱动器和设备提供BitLocker保护。将BitLocker与操作系统集成后，可以消除由于计算机丢失、被盗或解除授权不当而导致的数据被盗或公开的威胁。											&amp;ndash;百度百科&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>docker内存转储</title>
+      <link>http://localhost:1313/posts/docker%E5%86%85%E5%AD%98%E8%BD%AC%E5%82%A8/</link>
+      <pubDate>Fri, 14 Jul 2023 15:03:29 +0800</pubDate>
+      
+      <guid>http://localhost:1313/posts/docker%E5%86%85%E5%AD%98%E8%BD%AC%E5%82%A8/</guid>
+      <description>&lt;p&gt;大多数docker为剪裁的nuix系统，很多的命令工具都没有，需要上传静编译好的busybox上传docker cp busybox-i486 8553e459dc85:\tmp与scp命令相似。&lt;/p&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;1689300476991-3abd3884-202e-4d2f-ad2d-a4e9a15abcb9-1726652442112-95.webp&#34; alt=&#34;image.png&#34;  /&gt;
+&lt;/p&gt;
+&lt;p&gt;1、方法一&lt;/p&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;1689302239074-259deb79-d19d-410c-896a-05a42625fcfd.webp&#34; alt=&#34;image.png&#34;  /&gt;
+&lt;/p&gt;
+&lt;p&gt;root也无权限，因为docker为了保证主机安全，docker开了很多安全设置，禁止ptrace，Docker 将gdb调试需要SYS_PTRACE属性被禁止掉了，所以gdb在调试的时候会显示ptrace被禁止。所以想在docker内部调试gdb解决办法就是create和run的时候带上以下参数。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>交叉编译tcpdump</title>
+      <link>http://localhost:1313/posts/%E4%BA%A4%E5%8F%89%E7%BC%96%E8%AF%91tcpdump/</link>
+      <pubDate>Mon, 10 Jul 2023 15:03:29 +0800</pubDate>
+      
+      <guid>http://localhost:1313/posts/%E4%BA%A4%E5%8F%89%E7%BC%96%E8%AF%91tcpdump/</guid>
+      <description>&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://image-1253434595.cos.ap-chengdu.myqcloud.com/img/202409191513414.webp&#34; alt=&#34;&#34;  /&gt;
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;交叉编译tcpdump，在树莓派上抓包，用户层交叉编译比较简单。交叉编译器有很多，我们本次采用linaro(&lt;a href=&#34;http://releases.linaro.org/&#34;&gt;http://releases.linaro.org&lt;/a&gt;)交叉编译工具。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;系统版本：centos7&lt;/p&gt;
+&lt;p&gt;编译工具：arm-linux-gnueabi&lt;/p&gt;
+&lt;p&gt;wget &lt;a href=&#34;http://releases.linaro.org/components/toolchain/binaries/4.9-2017.01/arm-linux-gnueabi/gcc-linaro-4.9.4-2017.01-x86_64_arm-linux-gnueabi.tar.xz&#34;&gt;http://releases.linaro.org/components/toolchain/binaries/4.9-2017.01/arm-linux-gnueabi/gcc-linaro-4.9.4-2017.01-x86_64_arm-linux-gnueabi.tar.xz&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;wget&lt;font style=&#34;color:rgb(77, 77, 77);&#34;&gt; &lt;/font&gt;&lt;a href=&#34;http://www.tcpdump.org/release/libpcap-1.8.1.tar.gz&#34;&gt;http://www.tcpdump.org/release/libpcap-1.8.1.tar.gz&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;font style=&#34;color:rgb(77, 77, 77);&#34;&gt;wget &lt;/font&gt;&lt;a href=&#34;http://www.tcpdump.org/release/tcpdump-4.9.1.tar.gz&#34;&gt;http://www.tcpdump.org/release/tcpdump-4.9.1.tar.gz&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;1、下载好之后进行解压到任意目录&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;tar -xvf gcc-linaro-4.9.4-2017.01-x86_64_arm-linux-gnueabi.tar.xz
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;tar -zxvf libpcap-1.10.3.tar.gz
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;tar -zxvf tcpdump-4.99.3.tar.gz
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;2、进入到编译工具的bin目录后，执行&lt;code&gt;./arm-linux-gnueabi-gcc -v &lt;/code&gt;查看版本信息。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>绿盟下一代防火墙取证</title>
+      <link>http://localhost:1313/posts/%E7%BB%BF%E7%9B%9F%E4%B8%8B%E4%B8%80%E4%BB%A3%E9%98%B2%E7%81%AB%E5%A2%99/</link>
+      <pubDate>Mon, 20 Mar 2023 15:03:29 +0800</pubDate>
+      
+      <guid>http://localhost:1313/posts/%E7%BB%BF%E7%9B%9F%E4%B8%8B%E4%B8%80%E4%BB%A3%E9%98%B2%E7%81%AB%E5%A2%99/</guid>
+      <description>&lt;p&gt;绿盟下一代防火墙取证，需要进入到系统后台，可以使用ssh登录&lt;/p&gt;
+&lt;p&gt;用户名：develop&lt;/p&gt;
+&lt;p&gt;密码：绿盟厂家支持&lt;/p&gt;
+&lt;p&gt;ls -alhR /proc/*/exe 2&amp;gt; \dev\null |grep deleted&lt;/p&gt;
+&lt;p&gt;根据木马1、会自删除得到特点，2、随机8个字母数字。可以通过一个简单的ls和grep命令进行检测。此命令将遍历/proc目录中所有正在运行的进程，并检查它们是否具有格式为memfd:（deleted）的可执行路径。这个条目非常可疑，并且在无文件攻击中很常见。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Windows 取证之$MFT</title>
+      <link>http://localhost:1313/posts/windows-%E5%8F%96%E8%AF%81%E4%B9%8Bmft/</link>
+      <pubDate>Tue, 14 Mar 2023 15:03:29 +0800</pubDate>
+      
+      <guid>http://localhost:1313/posts/windows-%E5%8F%96%E8%AF%81%E4%B9%8Bmft/</guid>
+      <description>&lt;p&gt;&lt;code&gt;MFT&lt;/code&gt;，全称&lt;code&gt;Master File Table&lt;/code&gt;，即主文件表。Master File Table (MFT)是一个结构化的数据库，对所有保存到NTFS卷到对象进行追踪。每一个对 象在MFT中有一个FILE记录。&lt;/p&gt;
+&lt;p&gt;每一个FILE记录包含一系列属性，这些属性包含和文件相关的各种数 据及元数据，比如大小、时间、权限等。 MFT项也称为文件记录(&lt;code&gt;File Record&lt;/code&gt;)每一个记录为1024字节长。如果文件很小，文件内容将保存在MFT记录元数据的后面，如果文件比较 大，则通过指针指向文件的实际内容。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Jffs2镜像挂载过程</title>
+      <link>http://localhost:1313/posts/jffs2%E7%A3%81%E7%9B%98%E9%95%9C%E5%83%8F%E6%8C%82%E8%BD%BD%E8%BF%87%E7%A8%8B/</link>
+      <pubDate>Fri, 10 Mar 2023 15:03:29 +0800</pubDate>
+      
+      <guid>http://localhost:1313/posts/jffs2%E7%A3%81%E7%9B%98%E9%95%9C%E5%83%8F%E6%8C%82%E8%BD%BD%E8%BF%87%E7%A8%8B/</guid>
+      <description>&lt;h1 id=&#34;记录一次jffs2镜像挂载过程&#34;&gt;记录一次jffs2镜像挂载过程&lt;/h1&gt;
+&lt;p&gt;在某IOT设备上取得磁盘镜像文件，jffs2常用在嵌入式Linux系统。现在需要挂载到本地Linux系统，取出文件进行分析。&lt;/p&gt;
+&lt;p&gt;环境：ubuntu20.4   for ARM       # 不建议使用centos&lt;/p&gt;
+&lt;p&gt;工具：apt install mtd-utils        # 也可以源码编译&lt;/p&gt;
+&lt;h5 id=&#34;1查看iot设备文件镜像类型&#34;&gt;1、查看iot设备文件镜像类型：&lt;/h5&gt;
+&lt;p&gt;&lt;code&gt;file txt.dd&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;为大端的jffs文件系统：&lt;/p&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://image-1253434595.cos.ap-chengdu.myqcloud.com/img/202409241121315.png&#34; alt=&#34;&#34;  /&gt;
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;​	JFFS2的全名为JournallingFlashFileSystemVersion2（闪存日志型文件系统第2版），其功能就是管理在MTD设备上实现的日志型文件系统。与其他的存储设备存储方案相比，JFFS2并不准备提供让传统文件系统也可以使用此类设备的转换层。它只会直接在MTD设备上实现日志结构的文件系统。JFFS2会在安装的时候，扫描MTD设备的日志内容，并在RAM中重新建立文件系统结构本身。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>远程dd命令</title>
+      <link>http://localhost:1313/posts/%E8%BF%9C%E7%A8%8Bdd%E5%91%BD%E4%BB%A4/</link>
+      <pubDate>Tue, 07 Mar 2023 00:00:20 +0800</pubDate>
+      
+      <guid>http://localhost:1313/posts/%E8%BF%9C%E7%A8%8Bdd%E5%91%BD%E4%BB%A4/</guid>
+      <description>&lt;p&gt;一般ssh远程执行命令&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;ssh root@121.5.106.25 -p 2333 &amp;quot;df -h&amp;quot;&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://image-1253434595.cos.ap-chengdu.myqcloud.com/img/1689321748984-6e07ce8d-63bf-4867-a159-b23c93e6cbde.png&#34; alt=&#34;&#34;  /&gt;
+&lt;/p&gt;
+&lt;p&gt;想要dd磁盘镜像到本地只需要加“|”管道符号，举个栗子  镜像/tmp/1.dd&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;ssh root@192.168.253.145 -p 2333 &amp;quot;sudo dd if=/tmp/1.dd&amp;quot; | dd of=/root/1.image&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://image-1253434595.cos.ap-chengdu.myqcloud.com/img/1689321786209-5bb22927-9e7b-4a93-9b37-56c8748e73fe.png&#34; alt=&#34;&#34;  /&gt;
+&lt;/p&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://image-1253434595.cos.ap-chengdu.myqcloud.com/img/1718259086439-2de5ca12-58df-4af1-9678-70396cb721f3.png&#34; alt=&#34;&#34;  /&gt;
+&lt;/p&gt;
+&lt;p&gt;带压缩的命令&lt;/p&gt;
+&lt;p&gt;远程主机上&lt;code&gt;dd if=/dev/sda | gzip -1 - | ssh user@local dd of=image.gz&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;本地主机上&lt;code&gt;ssh user@remote &amp;quot;dd if=/dev/sda | gzip -1 -&amp;quot; | dd of=image.gz&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;font style=&#34;color:rgb(82, 82, 82);&#34;&gt;#gzip -1 压缩级别 最高到9 默认是6级别&lt;/font&gt;&lt;/p&gt;
+&lt;p&gt;#可以pv用来监视大型dd操作的进度，&lt;code&gt;dd if=/dev/sda | gzip -1 - | pv | ssh user@local dd of=image.gz&lt;/code&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Windows&amp;Linux内存转储</title>
+      <link>http://localhost:1313/posts/windowslinux%E5%86%85%E5%AD%98%E8%BD%AC%E5%82%A8/</link>
+      <pubDate>Sat, 10 Dec 2022 15:03:29 +0800</pubDate>
+      
+      <guid>http://localhost:1313/posts/windowslinux%E5%86%85%E5%AD%98%E8%BD%AC%E5%82%A8/</guid>
+      <description>&lt;p&gt;内存（RAM）是易失性数据，表现在当系统断电时候擦除，内存取证对寻找是否存在恶意程序有重要帮助。&lt;/p&gt;
+&lt;h1 id=&#34;原则&#34;&gt;原则&lt;/h1&gt;
+&lt;p&gt;1、无损原则
+防止由于对设备、系统的操作而损毁某些电子证据，造成证据收集不充分，在取证的过程中，不能对涉案设备、系统进行任何修改操作，以维护涉案设备、运行环境等全部信息的完整状态。
+2、完整原则
+在取证与鉴定过程中，应该尽可能地全面调查取证，认真分析电子证据的来源并进行全方位、多角度的取证和分析，在确保证据与案件事实关联的基础上，将获得的所有电子证据结合案件的其他证据，相互印证，排除矛盾的电子证据，最终形成完整的证据链条。
+3、及时原则
+随着系统时间的推移，如日志覆盖、C&amp;amp;C存活时间等，信息都会或多或少产生变化，这些数据信息则不再能够如实反映案件事实。因而电子证据具有一定的时效性，在确定取证对象之后，应该尽早收集证据，保证相关电子数据没有受到任何破坏或损失，维持其与案件事实的关联性。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>solaris&amp;zfs取证常用命令</title>
+      <link>http://localhost:1313/posts/solariszfs%E5%8F%96%E8%AF%81%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</link>
+      <pubDate>Thu, 08 Dec 2022 15:03:29 +0800</pubDate>
+      
+      <guid>http://localhost:1313/posts/solariszfs%E5%8F%96%E8%AF%81%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</guid>
+      <description>&lt;h1 id=&#34;solaris&#34;&gt;solaris&lt;/h1&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Solaris是Sun Microsystems研发的计算机操作系统，采用SPARC架构或X86架构，主要用于工 作站、服务器上的操作系统。&lt;/p&gt;
+&lt;p&gt;SPARC全称为“可扩充处理器架构”（Scalable Processor ARChitecture），是RISC微处理器架 构之一，其指令集和X86有显著区别，并且有自己独有的窗口、延迟槽、过程调用特点。 SPARC架构的计算机一般用于工业、航天相关领域，其在类似IDC和一般IT场景的使用极为罕见。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Iot取证</title>
+      <link>http://localhost:1313/posts/iot%E5%8F%96%E8%AF%81/</link>
+      <pubDate>Mon, 19 Sep 2022 10:00:00 +0800</pubDate>
+      
+      <guid>http://localhost:1313/posts/iot%E5%8F%96%E8%AF%81/</guid>
+      <description>&lt;p&gt;常见的IoT路由器固件一般是保存在ROM flash芯片中，flash芯片是一种只读的固态半导体存储器，无法被改变或者删除，并且不会因为电源关闭而丢失数据&lt;/p&gt;
+&lt;p&gt;路由器固件提取，基本分为2种方法，一种是直接接触flash芯片、一种是从登录运行的路由器拷贝文件。&lt;/p&gt;
+&lt;p&gt;获取到flash&lt;/p&gt;
+&lt;p&gt;使用编程器（类似于读卡器）读取flash&lt;/p&gt;
+&lt;p&gt;获取到shell&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>邮件头分析方法</title>
+      <link>http://localhost:1313/posts/%E9%82%AE%E4%BB%B6%E5%A4%B4%E5%88%86%E6%9E%90%E6%96%B9%E6%B3%95/</link>
+      <pubDate>Sat, 10 Sep 2022 15:03:29 +0800</pubDate>
+      
+      <guid>http://localhost:1313/posts/%E9%82%AE%E4%BB%B6%E5%A4%B4%E5%88%86%E6%9E%90%E6%96%B9%E6%B3%95/</guid>
+      <description>&lt;p&gt;Q：给出一封邮件的源代码属性，代码如下。解析邮件头字段并分析攻击情况:&lt;/p&gt;
+&lt;p&gt;Sign: INF.1.1&lt;/p&gt;
+&lt;p&gt;Id: 00000008&lt;/p&gt;
+&lt;p&gt;CTime: 2022-09-08 08:41:49&lt;/p&gt;
+&lt;p&gt;Compress: none&lt;/p&gt;
+&lt;p&gt;EncyptType: none&lt;/p&gt;
+&lt;p&gt;EncyptKey: otlKXGdtx8Zx4lfARufUjiCuGtpuWwyy7OfxCjwKxiziJKlLLVLE3q2pXJb7/phv+jZImN17qjdYS2m5tu0oKB83gamNsy6GEgTwPSFQSuLC+J1FHprmH4SdltDp0uQj5+9mvInjW8imQo5RPI+YQ2ZNAVD/ogRRpXL3Za34P07B7f8bP2o8f3jcbrEOcprdD6ZRm7PZ/65ooo9lAagqw0dy1e6I1Xfo1wEutRekcO6wt7S4z//sFkai0zWGnkmADcO9C7jR0OrgjKhhWhtCvGkd+4CSohuGKJ+rhK0azH36i2Yw7ZVZ24mYJ3Q51INiinpdxvHJEKAfafE7cyJLnExSbcfI5K+qOGmFLTOBpB53QzPyra0lV6yhjaA2gVyaYEbtXq5lupF8jswNvOirIvmhor6YPc9Vgro3xEKbNnhOnegbWvOzgU/giDFCdgROujW6d4xn3C4vhFM0HVqQqctKxvd+Z4fuMvIn6RsMh41kTHIebqmgNEIyR5oqzx871N/wYQPOQexIWVrrSmy3em6Y4ePNKpS3KfvfoA4R8z6ok9wmYnE2nJ+OIzeYOV/09zTgWrFWiiceW/VzzOQ2mP4aCugRyIo4AAWIWC8SR9ehz5+2KweFanLe4GiSWbyQorIhkXOh76JlHMlOFCWWYny3XmmAhD4RZPeHrVIOTTI=&lt;/p&gt;
+&lt;p&gt;Type: MAIL.EML&lt;/p&gt;
+&lt;p&gt;Size: 214547&lt;/p&gt;
+&lt;p&gt;AuthCode: C33AEFDB&lt;/p&gt;
+&lt;p&gt;Time: 2022-09-08 08:41:44&lt;/p&gt;
+&lt;p&gt;CapType: WEBMAIL&lt;/p&gt;
+&lt;p&gt;**Owner: **&lt;a href=&#34;mailto:sanyaic@yahoo.com.cn&#34;&gt;sanyaic@yahoo.com.cn&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;State: =?utf-8?B?77+90bbvv70=?=&lt;/p&gt;
+&lt;p&gt;Folder:=?unicode?B?NmX2TrF7&lt;/p&gt;
+&lt;p&gt;**X-Apparently-To: **&lt;a href=&#34;mailto:sanyaic@yahoo.com.cn&#34;&gt;sanyaic@yahoo.com.cn&lt;/a&gt; via 202.165.102.62; Thu, 06 Sep 2022 09:34:00 -0700&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Return-Path:&lt;/strong&gt; &lt;a href=&#34;mailto:faisal@shammiexports.com&#34;&gt;faisal@shammiexports.com&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Received-SPF:&lt;/strong&gt; none (domain of shammiexports.com does not designate permitted sender hosts) ZXNlIHByb2R1Y3RzIGluIHRoZSBhdHRhY2hlZCBwdXJjaGFzZSBvcmRlci4g TGV0IHVzIGtub3cgeW91ciBkZWxpdmVyeSB0aW1lIGFuZCBwYXltZW50IG1l dGhvZC4gV2Ugd2FpdCBmb3IgeW91ciBzb29uZXN0IHJlcGx5LiBXZSBob3Bl IHRvIGhhdmUgYSBzdWNjZXNzZnVsIGJ1c2luZXNzIHJlbGF0aW9uc2hpcC4g UmVnYXJkcywgRmFpc2FsIFNoYW1pbCBFeHBvcnRzIAEwAQEBAQN0ZXh0L2h0 bWwDAzECUXVvdGF0aW9uLnppcANhcHBsaWNhdGlvbi96aXADAzIwNA&amp;ndash;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;X-YMailISG:&lt;/strong&gt; YNpCb2cWLDvbiZnS0sJKk5ZHUEVM7oIue8wOamMCr051abG3 leJjpFBfp9hmuuf6XxIzsbFNQ21FoEB_qCxfoxOb595_k55iwlJJZqQo4E9d 0fj.INBETvSEsF6QO_MgeLS8rfSR2FAzgIzX5zc0rkl92KJynDsJeV6bzqsm sAWVU1ezLQYaI3K_sWOsau_TCAiuvsZNrleko2t2WeXqeFLp1THJszulnlL5 SjJ2JpirEeuypLkxBjnq_wQeG3RB6DsU9.lioMpwpFWU28EGJuRxjSaOSMnL O3iVZefjDtHtep8a1ruPTFcydxTsP9iVPlihDarKsiYE709tHWYJOGQ58Enw 14.3NDcoZ9L1SPlwSvCK6_c_nnkzhauxoMRHUqn_Nh3cM6yMcZszOCWLiYvO ercavYFNs74Kxx4tWU9u6_baGjtGjZ168cWkI8_u_81UllWFPXbxEDI-&lt;/p&gt;
+&lt;p&gt;**X-Originating-IP: **[74.54.255.142]&lt;/p&gt;
+&lt;p&gt;**Authentication-Results: **mta1002.mail.cnb.yahoo.com from=shammiexports.com; domainkeys=neutral (no sig); from=shammiexports.com; dkim=neutral (no sig)&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Received:&lt;/strong&gt; from 127.0.0.1 (EHLO w12.hostriplex.com) (74.54.255.142) by mta1002.mail.cnb.yahoo.com with SMTP; Thu, 06 Sep 2022 09:33:58 -0700&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Received:&lt;/strong&gt; from ([41.138.186.31]) by w12.hostriplex.com with MailEnable WebMail; Thu, 6 Sep 2022 20:22:55 +0500&lt;/p&gt;
+&lt;p&gt;**MIME-Version: **1.0&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;To:&lt;/strong&gt; undisclosed-recipients&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;From:&lt;/strong&gt; &lt;a href=&#34;mailto:faisal@shammiexports.com&#34;&gt;faisal@shammiexports.com&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Subject:&lt;/strong&gt; Quotation&lt;/p&gt;
+&lt;p&gt;**Date: **Thu, 6 Sep 2022 16:22:55 +0100&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Linux常用提权</title>
+      <link>http://localhost:1313/posts/linux%E5%B8%B8%E7%94%A8%E6%8F%90%E6%9D%83/</link>
+      <pubDate>Sat, 06 Aug 2022 15:03:29 +0800</pubDate>
+      
+      <guid>http://localhost:1313/posts/linux%E5%B8%B8%E7%94%A8%E6%8F%90%E6%9D%83/</guid>
+      <description>&lt;h1 id=&#34;suid提权&#34;&gt;suid提权&lt;/h1&gt;
+&lt;p&gt;上回绿盟取证时发现入侵者有部分木马是root权限运行，取证时用的apache账号，权限不够。在多处发现攻击者可能通过python进行suid提取。所以总结下攻击者可能用到的suid提权。&lt;/p&gt;
+&lt;p&gt;1.查找root权限的二进制文件&lt;/p&gt;
+&lt;p&gt;find / -user root -perm -4000 -print 2&amp;gt;/dev/null&lt;/p&gt;
+&lt;p&gt;find / -perm -u=s -type f 2&amp;gt;/dev/null&lt;/p&gt;
+&lt;p&gt;find / -user root -perm -4000 -exec ls -ldb {} ;&lt;/p&gt;
+&lt;p&gt;#SUID权限的设置只针对二进制可执行文件，可以通过&lt;code&gt;chmod u+s&lt;/code&gt;、&lt;code&gt;chmod u-s&lt;/code&gt;命令赋予、去掉二进制文件u权限。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>vol内存取证框架使用</title>
+      <link>http://localhost:1313/posts/vol%E5%86%85%E5%AD%98%E5%8F%96%E8%AF%81%E6%A1%86%E6%9E%B6%E4%BD%BF%E7%94%A8/</link>
+      <pubDate>Fri, 10 Jun 2022 15:03:29 +0800</pubDate>
+      
+      <guid>http://localhost:1313/posts/vol%E5%86%85%E5%AD%98%E5%8F%96%E8%AF%81%E6%A1%86%E6%9E%B6%E4%BD%BF%E7%94%A8/</guid>
+      <description>&lt;p&gt;vol3之于vol2，很大的改变就是用symbol_tables(符号表)替换了profile(配置文件)，vol3带有一个广泛的符号表库，并且可以基于内存映像本身为大多数 Windows 内存映像生成新的&lt;a href=&#34;https://volatility3.readthedocs.io/en/latest/volatility3.framework.interfaces.symbols.html#volatility3.framework.interfaces.symbols.SymbolTableInterface&#34;&gt;符号表&lt;/a&gt;。&lt;/p&gt;
+&lt;p&gt;Linux确认内核版本：利用&lt;strong&gt;banner&lt;/strong&gt;中关键词搜索“&lt;strong&gt;Linux Version&lt;/strong&gt;”，从而再进一步选择&lt;strong&gt;Volatility2&lt;/strong&gt;的&lt;strong&gt;Profile&lt;/strong&gt;或者&lt;strong&gt;Volatility3&lt;/strong&gt;的&lt;strong&gt;Symbols&lt;/strong&gt;。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>PYinstaller解包</title>
+      <link>http://localhost:1313/posts/pyinstaller%E8%A7%A3%E5%8C%85/</link>
+      <pubDate>Mon, 10 Jan 2022 15:03:29 +0800</pubDate>
+      
+      <guid>http://localhost:1313/posts/pyinstaller%E8%A7%A3%E5%8C%85/</guid>
+      <description>&lt;p&gt;Pyinstaller用于打包python程序到二进制文件，win下打包为exe，linux下打包为elf，mac下打包为app。x86与arm架构均支持。&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/extremecoders-re/pyinstxtractor&#34;&gt;https://github.com/extremecoders-re/pyinstxtractor&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;pe&lt;/p&gt;
+&lt;p&gt;使用脚本解包，原先打包环境为python3.7&lt;/p&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://image-1253434595.cos.ap-chengdu.myqcloud.com/img/202409241330688.png&#34; alt=&#34;img&#34;  /&gt;
+&lt;/p&gt;
+&lt;p&gt;反编译pyc文件&lt;/p&gt;
+&lt;p&gt;pip install uncompyle6&lt;/p&gt;
+&lt;p&gt;uncompyle6 -o xx.py xx.pyc&lt;/p&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://image-1253434595.cos.ap-chengdu.myqcloud.com/img/202409241330809.png&#34; alt=&#34;img&#34;  /&gt;
+&lt;/p&gt;
+&lt;p&gt;elf&lt;/p&gt;
+&lt;p&gt;readelf -s erlfile 先查看pythondata数据地址&lt;/p&gt;
+&lt;p&gt;解包&lt;/p&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://image-1253434595.cos.ap-chengdu.myqcloud.com/img/202409241330164.png&#34; alt=&#34;img&#34;  /&gt;
+&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://bbs.kanxue.com/thread-277811.htm&#34;&gt;https://bbs.kanxue.com/thread-277811.htm&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>一种简单科学上网的方法</title>
+      <link>http://localhost:1313/posts/%E4%B8%80%E7%A7%8D%E7%AE%80%E5%8D%95%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91%E7%9A%84%E6%96%B9%E6%B3%95/</link>
+      <pubDate>Thu, 10 Jun 2021 15:03:29 +0800</pubDate>
+      
+      <guid>http://localhost:1313/posts/%E4%B8%80%E7%A7%8D%E7%AE%80%E5%8D%95%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91%E7%9A%84%E6%96%B9%E6%B3%95/</guid>
+      <description>&lt;h2 id=&#34;0x01&#34;&gt;0x01&lt;/h2&gt;
+&lt;p&gt;1、需要一台境外的vps服务器，由服务器转发数据。&lt;/p&gt;
+&lt;p&gt;&lt;font style=&#34;color:rgb(0, 0, 0);&#34;&gt;2、OpenSSH，&lt;/font&gt;本地如果是比较老的Windows就需要OpenSSH支持。&lt;font style=&#34;color:rgb(0, 0, 0);&#34;&gt;（OpenSSH是安全 Shell (SSH) 工具的开放源代码版本，Linux 及其他非 Windows 系统的管理员使用此类工具跨平台管理远程系统。 OpenSSH 在 2018 年秋季已添加至 Windows，并包含在 Windows 10 和 Windows Server 2019 中。详见&lt;/font&gt;&lt;a href=&#34;https://www.openssh.com/manual.html&#34;&gt;https://www.openssh.com/manual.html&lt;/a&gt;&lt;font style=&#34;color:rgb(0, 0, 0);&#34;&gt;，这里只是用到ssh.exe）&lt;/font&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>ikuai 路由器万能密码</title>
+      <link>http://localhost:1313/posts/ikuai-%E8%B7%AF%E7%94%B1%E5%99%A8%E4%B8%87%E8%83%BD%E5%AF%86%E7%A0%81/</link>
+      <pubDate>Wed, 10 Mar 2021 15:03:29 +0800</pubDate>
+      
+      <guid>http://localhost:1313/posts/ikuai-%E8%B7%AF%E7%94%B1%E5%99%A8%E4%B8%87%E8%83%BD%E5%AF%86%E7%A0%81/</guid>
+      <description>&lt;p&gt;title=&amp;ldquo;登录爱快流控路由&amp;rdquo;&lt;img loading=&#34;lazy&#34; src=&#34;https://image-1253434595.cos.ap-chengdu.myqcloud.com/img/202409241342100.png&#34; alt=&#34;img&#34;  /&gt;
+&lt;/p&gt;
+&lt;p&gt;用户名 &lt;code&gt;&amp;quot;or&amp;quot;&amp;quot;=&amp;quot;&amp;quot;or&amp;quot;&amp;quot;=&amp;quot; &lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;密码无，直接点击登录&lt;/p&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://image-1253434595.cos.ap-chengdu.myqcloud.com/img/202409241342170.png&#34; alt=&#34;img&#34;  /&gt;
+&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>测试文档</title>
-      <link>https://dshh-sec.github.io/posts/test/</link>
-      <pubDate>Mon, 20 Sep 2021 15:03:29 +0800</pubDate>
+      <link>http://localhost:1313/posts/test/</link>
+      <pubDate>Wed, 20 Jan 2021 15:03:29 +0800</pubDate>
       
-      <guid>https://dshh-sec.github.io/posts/test/</guid>
+      <guid>http://localhost:1313/posts/test/</guid>
       <description>&lt;h1 id=&#34;asdadsd测试&#34;&gt;ASDADSD测试&lt;/h1&gt;
 &lt;p&gt;&lt;em&gt;ADASD测试&lt;/em&gt;&lt;/p&gt;
 &lt;ol&gt;
