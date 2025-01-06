@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="robots" content="index, follow">
-<title>Linux常用提权 | Dshh&#39;s Blog</title>
+<title>Linux常用提权 | DSHH&#39;s Blog</title>
 <meta name="keywords" content="">
 <meta name="description" content="suid提权
 上回绿盟取证时发现入侵者有部分木马是root权限运行，取证时用的apache账号，权限不够。在多处发现攻击者可能通过python进行suid提取。所以总结下攻击者可能用到的suid提权。
@@ -14,7 +14,7 @@ find / -user root -perm -4000 -print 2&gt;/dev/null
 find / -perm -u=s -type f 2&gt;/dev/null
 find / -user root -perm -4000 -exec ls -ldb {} ;
 #SUID权限的设置只针对二进制可执行文件，可以通过chmod u&#43;s、chmod u-s命令赋予、去掉二进制文件u权限。">
-<meta name="author" content="dshh">
+<meta name="author" content="DSHH">
 <link rel="canonical" href="https://dshh-sec.github.io/posts/linux%E5%B8%B8%E7%94%A8%E6%8F%90%E6%9D%83/">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.css" rel="preload stylesheet" as="style">
 <script defer crossorigin="anonymous" src="/assets/js/highlight.js" onload="hljs.initHighlightingOnLoad();"></script>
@@ -140,7 +140,7 @@ find / -user root -perm -4000 -exec ls -ldb {} ;
   "dateModified": "2022-08-06T15:03:29+08:00",
   "author":{
     "@type": "Person",
-    "name": "dshh"
+    "name": "DSHH"
   },
   "mainEntityOfPage": {
     "@type": "WebPage",
@@ -148,7 +148,7 @@ find / -user root -perm -4000 -exec ls -ldb {} ;
   },
   "publisher": {
     "@type": "Organization",
-    "name": "Dshh's Blog",
+    "name": "DSHH's Blog",
     "logo": {
       "@type": "ImageObject",
       "url": "https://dshh-sec.github.io/img/Q.gif"
@@ -293,7 +293,7 @@ find / -user root -perm -4000 -exec ls -ldb {} ;
     </span>
     <span id="post_meta_style_5">
         <span class="fa fa-user-o"></span>
-        <span>dshh
+        <span>DSHH
             &nbsp;&nbsp;
         </span>
     </span>
@@ -585,7 +585,7 @@ find / -user root -perm -4000 -exec ls -ldb {} ;
         Copyright
         &copy;
         2021-2025
-        <a href="https://dshh-sec.github.io/" style="color:#939393;">Dshh&#39;s Blog</a>
+        <a href="https://dshh-sec.github.io/" style="color:#939393;">DSHH&#39;s Blog</a>
         All Rights Reserved
     </span>
     <a href="https://beian.miit.gov.cn/" target="_blank" style="color:#939393;"></a>&nbsp;
@@ -684,11 +684,11 @@ find / -user root -perm -4000 -exec ls -ldb {} ;
                 e.preventDefault();
                 let htmlData = window.getSelection().toString() +
                     '\r\n\n————————————————\r\n' +
-                    '版权声明：本文为「'+"Dshh's Blog"+'」的原创文章，遵循CC 4.0 BY-SA版权协议，转载请附上原文出处链接及本声明。' +
+                    '版权声明：本文为「'+"DSHH's Blog"+'」的原创文章，遵循CC 4.0 BY-SA版权协议，转载请附上原文出处链接及本声明。' +
                 '\r\n原文链接：' + location.href;
                 let textData = window.getSelection().toString() +
                     '\r\n\n————————————————\r\n' +
-                    '版权声明：本文为「'+"Dshh's Blog"+'」的原创文章，遵循CC 4.0 BY-SA版权协议，转载请附上原文出处链接及本声明。' +
+                    '版权声明：本文为「'+"DSHH's Blog"+'」的原创文章，遵循CC 4.0 BY-SA版权协议，转载请附上原文出处链接及本声明。' +
                 '\r\n原文链接：' + location.href;
                 clipboardData.setData('text/html', htmlData);
                 clipboardData.setData('text/plain', textData);
@@ -714,7 +714,7 @@ find / -user root -perm -4000 -exec ls -ldb {} ;
             if ('clipboard' in navigator) {
                 let text = codeblock.textContent +
                     '\r\n————————————————\r\n' +
-                    '版权声明：本文为「'+"Dshh's Blog"+'」的原创文章，遵循CC 4.0 BY-SA版权协议，转载请附上原文出处链接及本声明。' +
+                    '版权声明：本文为「'+"DSHH's Blog"+'」的原创文章，遵循CC 4.0 BY-SA版权协议，转载请附上原文出处链接及本声明。' +
                 '\r\n原文链接：' + location.href;
                 navigator.clipboard.writeText(text);
                 copyingDone();

@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="robots" content="index, follow">
-<title>Jffs2镜像挂载过程 | Dshh&#39;s Blog</title>
+<title>Jffs2镜像挂载过程 | DSHH&#39;s Blog</title>
 <meta name="keywords" content="">
 <meta name="description" content="记录一次jffs2镜像挂载过程
 在某IOT设备上取得磁盘镜像文件，jffs2常用在嵌入式Linux系统。现在需要挂载到本地Linux系统，取出文件进行分析。
@@ -18,7 +18,7 @@ file txt.dd
 
 
 ​	JFFS2的全名为JournallingFlashFileSystemVersion2（闪存日志型文件系统第2版），其功能就是管理在MTD设备上实现的日志型文件系统。与其他的存储设备存储方案相比，JFFS2并不准备提供让传统文件系统也可以使用此类设备的转换层。它只会直接在MTD设备上实现日志结构的文件系统。JFFS2会在安装的时候，扫描MTD设备的日志内容，并在RAM中重新建立文件系统结构本身。">
-<meta name="author" content="dshh">
+<meta name="author" content="DSHH">
 <link rel="canonical" href="https://dshh-sec.github.io/posts/jffs2%E7%A3%81%E7%9B%98%E9%95%9C%E5%83%8F%E6%8C%82%E8%BD%BD%E8%BF%87%E7%A8%8B/">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.css" rel="preload stylesheet" as="style">
 <script defer crossorigin="anonymous" src="/assets/js/highlight.js" onload="hljs.initHighlightingOnLoad();"></script>
@@ -152,7 +152,7 @@ file txt.dd
   "dateModified": "2023-03-10T15:03:29+08:00",
   "author":{
     "@type": "Person",
-    "name": "dshh"
+    "name": "DSHH"
   },
   "mainEntityOfPage": {
     "@type": "WebPage",
@@ -160,7 +160,7 @@ file txt.dd
   },
   "publisher": {
     "@type": "Organization",
-    "name": "Dshh's Blog",
+    "name": "DSHH's Blog",
     "logo": {
       "@type": "ImageObject",
       "url": "https://dshh-sec.github.io/img/Q.gif"
@@ -305,7 +305,7 @@ file txt.dd
     </span>
     <span id="post_meta_style_5">
         <span class="fa fa-user-o"></span>
-        <span>dshh
+        <span>DSHH
             &nbsp;&nbsp;
         </span>
     </span>
@@ -602,7 +602,7 @@ file txt.dd
         Copyright
         &copy;
         2021-2025
-        <a href="https://dshh-sec.github.io/" style="color:#939393;">Dshh&#39;s Blog</a>
+        <a href="https://dshh-sec.github.io/" style="color:#939393;">DSHH&#39;s Blog</a>
         All Rights Reserved
     </span>
     <a href="https://beian.miit.gov.cn/" target="_blank" style="color:#939393;"></a>&nbsp;
@@ -701,11 +701,11 @@ file txt.dd
                 e.preventDefault();
                 let htmlData = window.getSelection().toString() +
                     '\r\n\n————————————————\r\n' +
-                    '版权声明：本文为「'+"Dshh's Blog"+'」的原创文章，遵循CC 4.0 BY-SA版权协议，转载请附上原文出处链接及本声明。' +
+                    '版权声明：本文为「'+"DSHH's Blog"+'」的原创文章，遵循CC 4.0 BY-SA版权协议，转载请附上原文出处链接及本声明。' +
                 '\r\n原文链接：' + location.href;
                 let textData = window.getSelection().toString() +
                     '\r\n\n————————————————\r\n' +
-                    '版权声明：本文为「'+"Dshh's Blog"+'」的原创文章，遵循CC 4.0 BY-SA版权协议，转载请附上原文出处链接及本声明。' +
+                    '版权声明：本文为「'+"DSHH's Blog"+'」的原创文章，遵循CC 4.0 BY-SA版权协议，转载请附上原文出处链接及本声明。' +
                 '\r\n原文链接：' + location.href;
                 clipboardData.setData('text/html', htmlData);
                 clipboardData.setData('text/plain', textData);
@@ -731,7 +731,7 @@ file txt.dd
             if ('clipboard' in navigator) {
                 let text = codeblock.textContent +
                     '\r\n————————————————\r\n' +
-                    '版权声明：本文为「'+"Dshh's Blog"+'」的原创文章，遵循CC 4.0 BY-SA版权协议，转载请附上原文出处链接及本声明。' +
+                    '版权声明：本文为「'+"DSHH's Blog"+'」的原创文章，遵循CC 4.0 BY-SA版权协议，转载请附上原文出处链接及本声明。' +
                 '\r\n原文链接：' + location.href;
                 navigator.clipboard.writeText(text);
                 copyingDone();
